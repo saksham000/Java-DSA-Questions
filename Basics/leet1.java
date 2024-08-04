@@ -22,7 +22,7 @@ public class leet1 {
                     
                 }
             }
-        }
+        }input.close();
         
     }
 }

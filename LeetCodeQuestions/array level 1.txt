@@ -1,0 +1,29 @@
+ARRAY LEVEL - 1 
+     Don't be so quick to judge me after all you only see what I choose to show you - Itachi Uchiha.
+
+1->Peak Element(done)
+2->Find the minimum and maximum element in an array(done)
+3->Write a program to reverse the array (done)
+4->Write a program to sort the given array (done)
+5->Find the Kth largest and Kth smallest number in an array(done)
+6->Find the occurrence of an integer in the array(done)
+7->Sort the array of 0s, 1s, and 2s
+8->Subarray with given Sum
+9->Move all the negative elements to one side of the array 
+10->Find the Union and Intersection of the two sorted arrays
+11->Perform Insertsion and Deletion in array
+
+
+
+
+
+
+
+website :- https://us8.proxysite.one/
+
+proxy :- 1337x.to
+
+Shishunki no Obenkyou
+
+
+https://www.youtube.com/shorts/iMRAjLnioRw

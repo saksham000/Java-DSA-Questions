@@ -31,15 +31,15 @@ public class stack1 {
         }
     }
     public static void main(String arg[]){
-        stack s = new stack();
-        s.push(1);
-        s.push(2);
-        s.push(3);
-        s.push(4);
+        // stack s = new stack();
+        // s.push(1);
+        // s.push(2);
+        // s.push(3);
+        // s.push(4);
 
-        while(!s.isempty()){
-            System.out.println(s.peek());
-            s.pop(); 
-        }
+        // while(!s.isempty()){
+        //     System.out.println(s.peek());
+        //     s.pop(); 
+        // }
     }
 }

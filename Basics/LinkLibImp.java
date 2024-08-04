@@ -13,7 +13,7 @@ public class LinkLibImp {
         // System.out.println(list.peek());
         
 
-        ArrayList<Integer> array = new ArrayList<>();
+        // ArrayList<Integer> array = new ArrayList<>();
         ArrayList<Integer> array2 = new ArrayList<>();
         array2.add(10);
         array2.add(20);
