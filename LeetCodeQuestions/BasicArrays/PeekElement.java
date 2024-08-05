@@ -1,4 +1,4 @@
-package LeetCodeQuestions;
+package LeetCodeQuestions.BasicArrays;
 
 public class PeekElement {
 

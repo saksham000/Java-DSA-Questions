@@ -7,23 +7,8 @@ ARRAY LEVEL - 1
 4->Write a program to sort the given array (done)
 5->Find the Kth largest and Kth smallest number in an array(done)
 6->Find the occurrence of an integer in the array(done)
-7->Sort the array of 0s, 1s, and 2s
-8->Subarray with given Sum
-9->Move all the negative elements to one side of the array 
+7->Sort the array of 0s, 1s, and 2s(done)
+8->Subarray with given Sum(done)
+9->Move all the negative elements to one side of the array (done)
 10->Find the Union and Intersection of the two sorted arrays
-11->Perform Insertsion and Deletion in array
-
-
-
-
-
-
-
-website :- https://us8.proxysite.one/
-
-proxy :- 1337x.to
-
-Shishunki no Obenkyou
-
-
-https://www.youtube.com/shorts/iMRAjLnioRw
+11->Perform Insertsion and Deletion in array(done)

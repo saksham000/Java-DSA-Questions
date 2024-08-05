@@ -1,4 +1,4 @@
-package LeetCodeQuestions;
+package LeetCodeQuestions.BasicArrays;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package LeetCodeQuestions;
+package LeetCodeQuestions.BasicArrays;
 
 public class MoveNegToOneSide {
     public static void main(String[] args) {
