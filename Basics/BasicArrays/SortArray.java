@@ -1,4 +1,4 @@
-package LeetCodeQuestions.BasicArrays;
+package BasicArrays;
 
 import java.util.Arrays;
 
@@ -22,10 +22,6 @@ public class SortArray {
         int[] arr = { 5, 2, 8, 1, 9 };
         int reversedArray[] = sort(arr);
         System.out.println(Arrays.toString(reversedArray));
-
-        // for(int i=0;i<reversedArray.length-1;i++){
-        // System.out.println(reversedArray[i]);
-        // }
     }
 
 }

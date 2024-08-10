@@ -1,4 +1,4 @@
-package LeetCodeQuestions.BasicArrays;
+package BasicArrays;
 
 public class SubArrayForSum {
     public static void main(String[] args) {

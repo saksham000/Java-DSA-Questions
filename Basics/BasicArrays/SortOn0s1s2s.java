@@ -1,4 +1,4 @@
-package LeetCodeQuestions.BasicArrays;
+package BasicArrays;
 
 public class SortOn0s1s2s {
     public static void main(String[] args) {
