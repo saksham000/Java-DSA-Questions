@@ -14,7 +14,6 @@ public class BestTimeToBuyAndSellStock {
         // profit =  sellDay - buyDay ;
         System.out.println("Buy day is " + buyDay + " Sell Day is "+sellDay);
 
-
         return profit;
     }
     public static void main(String[] args) {
