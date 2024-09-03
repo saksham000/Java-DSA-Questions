@@ -1,4 +1,4 @@
-package Striver;
+package Striver.LinkedList;
 
 class Node {
     int data;
@@ -15,19 +15,25 @@ class Node {
     }
 }
 
-public class ReverseLinkedList {
+public class DeleteGivenNode {
 
-    static Node reverseLinkedList(Node head) {
-        Node tempHead = head;
-        while (head.next != null) {
+    public static void deleteGivenNode(Node head, int n) {
+        Node newNode = new Node(n);
+        Node resetHead = head;
+
+        if (head == null) {
+            head = newNode;
+        }
+
+        while (head.data != n) {
             head = head.next;
         }
-        tempHead = head;
-
-        return tempHead;
+        head.data = head.next.data;
+        head.next = head.next.next;
+        printList(resetHead);
     }
 
-    static void printlist(Node head) {
+    public static void printList(Node head) {
         while (head != null) {
             System.out.print(head.data + "->");
             head = head.next;
@@ -41,8 +47,9 @@ public class ReverseLinkedList {
         head.next = new Node(2);
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
-        Node reveList = reverseLinkedList(head);
-        printlist(reveList);
+
+        deleteGivenNode(head, 1);
+
     }
 
 }
