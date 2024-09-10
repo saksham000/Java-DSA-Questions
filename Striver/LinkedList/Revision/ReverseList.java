@@ -1,15 +1,12 @@
 package Striver.LinkedList.Revision;
 
-
 class Node{
     int data;
     Node next;
-
     Node(int data, Node next){
         this.data = data;
         this.next = next;
     }
-
     Node(int data){
         this.data = data;
         this.next = null;
@@ -30,13 +27,12 @@ public class ReverseList {
             curr = next;
         }
         head = prev;
-
         printList(head);
     }
 
     public static void printList(Node head){
         while (head != null) {
-            System.out.print(head.data + "->");
+            System.out.print(head.data +"->");
             head = head.next;
         }
         System.out.print("null");
