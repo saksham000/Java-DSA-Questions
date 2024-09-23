@@ -17,15 +17,15 @@ class Node {
 
 public class DeleteGivenNode {
 
-    public static void deleteGivenNode(Node head, int n) {
+    public static void deleteNode(Node head, int data){
         Node resetNode = head;
-
-        while (head.data != n) {
+        while (head.data != data) {
             head = head.next;
         }
         head.data = head.next.data;
         head.next = head.next.next;
         printList(resetNode);
+
     }
 
     public static void printList(Node head) {
@@ -43,7 +43,7 @@ public class DeleteGivenNode {
         head.next.next = new Node(66);
         head.next.next.next = new Node(3);
 
-        deleteGivenNode(head, 66);
+        deleteNode(head, 66);
 
     }
 
