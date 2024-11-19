@@ -6,6 +6,7 @@ public class nearsmall{
         int size = input.nextInt();
         int array[] = new int[20];
 
+
         System.out.println("Enter the elements of array");
         for(int i=0;i<size;i++){
             array[i] = input.nextInt();
