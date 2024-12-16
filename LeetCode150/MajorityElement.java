@@ -1,4 +1,4 @@
-package LeetCodeQuestions.LeetCode150;
+package LeetCode150;
 
 public class MajorityElement {
 

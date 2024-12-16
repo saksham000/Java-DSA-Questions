@@ -1,4 +1,4 @@
-package LeetCodeQuestions.LeetCode150;
+package LeetCode150;
 
 public class RemoveElement {
     public static void removeElement(int[] nums, int val) {

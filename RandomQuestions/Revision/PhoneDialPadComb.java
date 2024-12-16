@@ -1,16 +1,18 @@
-package RandomQuestions.ZopSmart;
+package RandomQuestions.Revision;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class PhoneDigitComb {
+public class PhoneDialPadComb {
 
     public static void findComb(String digits) {
-        List<String> result = new ArrayList<>();
+        List<String> res = new ArrayList<>();
+
         if (digits == null || digits.length() == 0) {
-            System.out.println(result);
+            System.out.println(res);
         }
+
         HashMap<Character, String> map = new HashMap<>();
         map.put('2', "abc");
         map.put('3', "def");
@@ -20,24 +22,24 @@ public class PhoneDigitComb {
         map.put('7', "pqrs");
         map.put('8', "tuv");
         map.put('9', "wxyz");
+
         StringBuilder comb = new StringBuilder();
-        backtrack(digits, 0, comb, result, map);
-        System.out.println(result);
+        backtrack(digits, 0, comb, res, map);
+        System.out.println(res);
     }
 
-    public static void backtrack(String digits, int index, StringBuilder comb, List<String> result,
+    public static void backtrack(String digits, int index, StringBuilder comb, List<String> res,
             HashMap<Character, String> map) {
         if (index == digits.length()) {
-            result.add(comb.toString());
+            res.add(comb.toString());
             return;
         }
-
         String letters = map.get(digits.charAt(index));
         for (int i = 0; i < letters.length(); i++) {
             char letter = letters.charAt(i);
             comb.append(letter);
-            backtrack(digits, index + 1, comb, result, map);
-            comb.deleteCharAt(comb.length() - 1); // ""
+            backtrack(digits, index + 1, comb, res, map);
+            comb.deleteCharAt(comb.length() - 1);
         }
     }
 
