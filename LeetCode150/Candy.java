@@ -1,6 +1,5 @@
 package LeetCode150;
 
-import java.util.Arrays;
 
 public class Candy {
 
