@@ -3,17 +3,17 @@ package LeetCode150;
 public class LongestCommonPrefix {
     
     public static void findPreFix(String[] strs){
-        StringBuilder sb = new StringBuilder();
 
-        for(int i=0;i<strs.length-1;i++){
+        String prefix = strs[0];
 
-            if(strs[i].charAt(i) == strs[i+1].charAt(i)){
-                sb.append(strs[i].charAt(i));
-            }else{
-                System.out.println("");
+        for(int i=1;i<strs.length;i++){
+            while(!strs[i].startsWith(prefix)){
+                prefix = prefix.substring(0,prefix.length()-1);
+                if(prefix.isEmpty()) System.out.println("-1");
             }
         }
-        System.out.println(sb.toString());
+        
+        System.out.println(prefix);
     }
 
     public static void main(String[] args) {
