@@ -2,6 +2,7 @@ package SlidingWindow;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class CountOccurencesOfAnagrams {
@@ -21,7 +22,7 @@ public class CountOccurencesOfAnagrams {
 
         int count = map.size();
         int i = 0, j = 0;
-        
+
         while (j < s.length()) {
             char c = s.charAt(j);
             if (map.containsKey(c)) {
@@ -40,7 +41,9 @@ public class CountOccurencesOfAnagrams {
                 char ch = s.charAt(i);
                 if (map.containsKey(ch)) {
                     map.put(ch, map.get(ch) + 1);
-                    count++;
+                    if (map.get(ch) == 1) {
+                        count++;
+                    }
                 }
                 i++;
                 j++;
@@ -51,7 +54,29 @@ public class CountOccurencesOfAnagrams {
         }
     }
 
+    // HashSet Approch
+
+    public static void secondApp(String s) {
+        HashSet<Character> set = new HashSet<>();
+        int max = 0, i = 0, j = 0;
+
+        while (j < s.length()) {
+            char c = s.charAt(j);
+            if (!set.contains(c)) {
+                // Add the character to the set and expand the window
+                set.add(c);
+                max = Math.max(max, j - i + 1);
+                j++;
+            } else {
+                // Remove characters from the set starting from i
+                set.remove(s.charAt(i));
+                i++;
+            }
+        }
+        System.out.println(max);
+    }
+
     public static void main(String[] args) {
-        findAnagram("forxxorfxdofr", "for");
+        findAnagram("cbaebabacd", "abc");
     }
 }
