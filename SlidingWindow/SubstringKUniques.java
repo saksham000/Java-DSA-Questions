@@ -65,6 +65,6 @@ public class SubstringKUniques {
     }
 
     public static void main(String[] args) {
-        findLongestSub("ababbc", 2);
+        findLargestSubWithK("ababbc", 2);
     }
 }
