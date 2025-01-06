@@ -1,6 +1,4 @@
-package SlidingWindow;
-
-import java.util.Arrays;
+package RandomQuestions;
 
 public class LongestSubsequenceWithDecreasingAdjacentDifference {
 
