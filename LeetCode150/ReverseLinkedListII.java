@@ -20,7 +20,8 @@ public class ReverseLinkedListII {
 
         BasicLLStruct.Node curr = prev.next;
         for(int i = 0; i< right-left;i++){
-            BasicLLStruct.Node temp = curr.next;
+            BasicLLStruct.Node 
+            temp = curr.next;
             curr.next = temp.next;
             temp.next = prev.next;
             prev.next = temp;
@@ -34,7 +35,8 @@ public class ReverseLinkedListII {
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
         head.next.next.next.next = new Node(5);
-        int left = 2, right = 4;
+        head.next.next.next.next.next = new Node(6);
+        int left = 2, right = 5;
         reverseLL(head,left,right);
     }
     
