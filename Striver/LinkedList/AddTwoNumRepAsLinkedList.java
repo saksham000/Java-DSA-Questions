@@ -1,5 +1,7 @@
 package Striver.LinkedList;
 
+import LeetCode150.Node;
+
 class Node {
     int data;
     Node next;
