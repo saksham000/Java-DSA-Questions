@@ -10,7 +10,6 @@ class Node{
     }
 }
 
-
 public class BinaryTreePreorderTraversal{
 
     public static void preOrderTrav(Node root){

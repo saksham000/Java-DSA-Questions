@@ -19,9 +19,6 @@ public class SymmetricTree {
 
         return isSymCheck(left.left,right.right) && isSymCheck(left.right, right.left);
     }
-
-    
-
     public static void main(String[] args) {
         System.out.println(isSym(BasicBTImpl.basicBT()));
     }
