@@ -15,6 +15,7 @@ class Pair {
     }
 }
 
+
 public class MaximumWidthBinaryTree {
 
     public static void findMaxWidth(Node root) {
