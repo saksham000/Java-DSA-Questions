@@ -15,7 +15,6 @@ class Pair {
     }
 }
 
-
 public class MaximumWidthBinaryTree {
 
     public static void findMaxWidth(Node root) {
@@ -53,7 +52,7 @@ public class MaximumWidthBinaryTree {
         System.out.println(ans);
     }
 
-    public static void main(String[] args) {
+    void main() {
         findMaxWidth(BasicBTImpl.basicBT());
     }
 }
