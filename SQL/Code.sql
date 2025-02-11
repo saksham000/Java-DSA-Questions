@@ -261,7 +261,6 @@ SELECT * FROM student
 
 -- Joins
 
--- Inner Join
 
 CREATE Table course(
     c_id int PRIMARY KEY,
@@ -276,7 +275,106 @@ INSERT INTO course VALUES(
     103,"science"
 )
 
-
 SELECT * FROM student
 
 SELECT * FROM course
+-- Inner Join
+
+-- alices are short form of a coloum we define. so that we dont need to write whole col name again
+SELECT * FROM student as s INNER JOIN course as c
+ON s.rollno = c.c_id
+
+-- left join
+
+SELECT * FROM student LEFT JOIN course on student.rollno = course.c_id
+
+-- full join
+
+SELECT * 
+FROM student 
+LEFT JOIN course 
+on student.rollno = course.c_id
+UNION
+SELECT * 
+FROM student 
+RIGHT JOIN course 
+on student.rollno = course.c_id
+
+-- left exclusive join
+
+SELECT * 
+FROM student as a
+LEFT JOIN course as b
+on a.rollno = b.c_id
+WHERE b.c_id IS NULL
+
+-- right exclusive join
+
+SELECT * 
+FROM student as a
+RIGHT JOIN course as b
+on a.rollno = b.c_id
+WHERE a.rollno IS NULL
+
+-- self join
+
+CREATE Table emp(
+    id int PRIMARY KEY,
+    name VARCHAR(10),
+    manager_id int
+)
+
+insert INTO emp VALUES(
+    101,"saksham",103
+),(
+    102,"encore",104
+),(
+    103,"king",NULL
+),(
+    104,"calm",103
+)
+
+SELECT a.name as manager_name, b.name 
+FROM emp as a
+JOIN emp as b
+ON a.id = b.manager_id
+
+-- Union
+
+SELECT name FROM emp
+UNION ALL -- it allows the repated values
+SELECT name from emp
+
+-- SQL Sub Queries
+
+SELECT AVG(marks) FROM student
+
+SELECT name,marks FROM student 
+WHERE marks > 61.714
+
+SELECT name,marks FROM student 
+WHERE marks > (SELECT AVG(marks) FROM student)
+
+-- another example
+-- find all even roll
+-- find names of student with even roll
+
+SELECT NAME,rollno FROM student
+WHERE rollno IN (SELECT rollno WHERE rollno % 2 = 0)
+
+-- Sub Query in FROM
+
+SELECT MAX(marks) FROM (SELECT * FROM student WHERE city = "bihar") as temp
+
+-- Sub Query in Select we never use this type and FROM one also
+
+SELECT (SELECT max(marks) FROM student), name FROM student
+
+-- View in SQL
+
+CREATE VIEW view1 as
+SELECT rollno, name FROM student
+
+SELECT * FROM view1
+
+DROP View view1
