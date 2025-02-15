@@ -378,3 +378,5 @@ SELECT rollno, name FROM student
 SELECT * FROM view1
 
 DROP View view1
+
+-- Doing leet50 now
