@@ -1,10 +1,10 @@
 package RandomQuestions;
-import java.util.HashMap;
 
+import java.util.HashMap;
 
 public class HashMapBasic {
     public static void main(String[] args) {
-        HashMap<Integer,String> empDetails = new HashMap<>();
+        HashMap<Integer, String> empDetails = new HashMap<>();
         empDetails.put(1, "Saksham");
         empDetails.put(2, "sharma ji");
         empDetails.put(3, "brahman");
@@ -18,7 +18,7 @@ public class HashMapBasic {
         System.out.println(empDetails);
         int min = Integer.MAX_VALUE;
         System.out.println(min);
-    
+
     }
-    
+
 }
