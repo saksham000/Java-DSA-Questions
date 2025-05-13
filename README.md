@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-starting soon from tomorrow
+starting app dev in kotlin
 =======
 started leetcode 150
 >>>>>>> 22422bc1287293fb0ba89547f86dcd4a2f212138
